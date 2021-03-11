@@ -17,6 +17,10 @@ import { Tool, ToolbarService, ToolType } from './file-view/toolbar.service';
 import { LeftPanelService } from './left-panel.service';
 import { DirectoryTreeComponent } from './directory-tree/directory-tree.component';
 
+declare const require: any;
+const test = require('src/assets/wasm/test.wasm');
+console.log(test);
+window['yoxi'] = test;
 
 @Component({
     selector: 'app-home',
